@@ -16,9 +16,59 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --lightest: #fae9d2;
+        --light: #d8cec1;
+        --midLight: #856b56;
+        --midDark: #724f3c;
+        --dark: #332213;
+        --darkest: #090605;
+      }
+
+      .info {
+        /* background-color: var(--light);
+        border-radius: 8px; */
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .info img {
+        max-width: auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Merriweather", serif;
+        color: var(--darkest);
+      }
+
+      .hero {
+        height: 600px;
+        background-image: url(./assets/cafeBanner.png);
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+      }
+
+      .coffee img {
+        max-width: 300px;
+        height: 300px;
+      }
+    </style>
   </head>
 
-  <body>
+  <body id="body">
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -68,7 +118,52 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div
+        class="hero d-flex flex-column justify-content-center align-items-center"
+      >
+        <div>
+          <h2>Welcome to</h2>
+        </div>
+        <div>
+          <h1>Caffeine Dreams</h1>
+        </div>
+        <div>
+          <h4>"Every cup an experience!"</h4>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col mt-4 mb-4 d-flex justify-content-center">
+            <h2>Welcome!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mb-5 info">
+            Nestled in the heart of the city, Caffeine Dreams Coffee Shop is a
+            charming oasis for those who cherish the timeless ritual of coffee
+            drinking. From the robust espresso to the velvety latte, each drink
+            is a testament to our passion for coffee excellence. At Caffeine
+            Dreams, we believe in sustainability and community. We're committed
+            to environmentally friendly practices, from using biodegradable
+            packaging to sourcing our ingredients locally. By visiting us,
+            you're not just enjoying a cup of coffee; you're supporting a
+            network of local growers and artisans. "Caffeine Dreams Coffee Shop
+            - Brewing Fantasies, One Cup at a Time." Join us in this delightful
+            journey of flavors, community, and the simple joy of a great cup of
+            coffee.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="./assets/coffeeCup.png" alt="Coffee cup" />
+          </div>
+          <div class="col">
+            <img src="./assets/coffeeBeans.png" alt="Coffee Beans" />
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
