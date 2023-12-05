@@ -34,15 +34,30 @@
         .galleryContainer {
           grid-template-columns: repeat(2, 1fr);
         }
+        .galleryContainer img {
+          width: 80%;
+          max-height: 500px;
+          justify-self: center;
+        }
       }
       @media (min-width: 992px) {
         .galleryContainer {
           grid-template-columns: repeat(3, 1fr);
         }
+        .galleryContainer img {
+          width: 80%;
+          max-height: 500px;
+          justify-self: center;
+        }
       }
       @media (min-width: 1200px) {
         .galleryContainer {
           grid-template-columns: repeat(4, 1fr);
+        }
+        .galleryContainer img {
+          width: 80%;
+          max-height: 500px;
+          justify-self: center;
         }
       }
     </style>
@@ -99,14 +114,107 @@
       </nav>
     </header>
     <main>
+      <!-- Main container for the gallery images. -->
       <div class="galleryContainer">
-        <img src="./assets/galleryPage/galleryPhoto1.png" alt="" />
-        <img src="./assets/galleryPage/galleryPhoto2.png" alt="" />
-        <img src="./assets/galleryPage/galleryPhoto3.png" alt="" />
-        <img src="./assets/galleryPage/galleryPhoto4.png" alt="" />
-        <img src="./assets/galleryPage/galleryPhoto5.png" alt="" />
-        <img src="./assets/galleryPage/galleryPhoto6.png" alt="" />
-        <img src="./assets/galleryPage/galleryPhoto7.png" alt="" />
+        <!-- Image 1 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto1.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard1.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 2 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto2.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard2.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 3 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto3.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard3.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 4 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto4.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard4.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 5 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto5.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard5.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 6 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto6.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard6.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 7 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto7.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard7.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 8 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto8.png"
+          alt=""
+          class="d-md-none mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard8.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
+        <!-- Image 9 -->
+        <img
+          src="./assets/galleryPage/galleryPhoto9.png"
+          alt=""
+          class="d-md-none mb-3 mb-3"
+        />
+        <img
+          src="./assets/galleryPage/galleryPhotoStandard9.png"
+          alt=""
+          class="d-none d-md-flex mb-3"
+        />
       </div>
     </main>
     <footer>
