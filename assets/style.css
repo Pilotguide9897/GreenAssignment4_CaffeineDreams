@@ -12,6 +12,41 @@
 
 /* Menu Page Styles */
 
+/* Gallery Page Styles */
+.galleryContainer {
+  display: grid;
+}
+@media (max-width: 767px) {
+  .galleryContainer {
+    grid-template-columns: 1fr;
+  }
+  .galleryContainer img {
+    width: 80%;
+    height: auto;
+    justify-self: center;
+  }
+}
+@media (min-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galleryContainer img {
+    width: 80%;
+    max-height: 500px;
+    justify-self: center;
+  }
+}
+@media (min-width: 992px) {
+  .galleryContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .galleryContainer img {
+    width: 80%;
+    max-height: 500px;
+    justify-self: center;
+  }
+}
+
 /* Events Page Styles */
 
 h1 {
