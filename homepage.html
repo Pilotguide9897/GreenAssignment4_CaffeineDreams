@@ -24,103 +24,67 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --lightest: #fae9d2;
-        --light: #d8cec1;
-        --midLight: #856b56;
-        --midDark: #724f3c;
-        --dark: #332213;
-        --darkest: #090605;
-      }
 
-      .info {
-        /* background-color: var(--light);
-        border-radius: 8px; */
-        font-family: "Times New Roman", Times, serif;
-      }
-
-      .info img {
-        max-width: auto;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Merriweather", serif;
-        color: var(--darkest);
-      }
-
-      .hero {
-        height: 600px;
-        background-image: url(./assets/cafeBanner.png);
-        background-size: cover;
-        /* background-repeat: no-repeat; */
-      }
-
-      .coffee img {
-        max-width: 300px;
-        height: 300px;
-      }
-    </style>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
   <body id="body">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand align-middle" href="#">
-            <img
-              src="./assets/logo.png"
-              alt="Logo"
-              width="150px"
-              height="120px"
-              class="d-inline-block"
-            />
-            Caffeine Dreams
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Contacts</a>
-              </li>
-            </ul>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand align-middle"
+              href="./homepage.html"
+              id="navbarLarger"
+            >
+              <img
+                src="./assets/logo.png"
+                alt="Logo"
+                width="150px"
+                height="120px"
+                class="d-inline-block"
+              />
+              Caffeine Dreams
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="./aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./galleryPage.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
       <div
-        class="hero d-flex flex-column justify-content-center align-items-center"
+        class="container homepageHero d-flex flex-column justify-content-center align-items-center"
       >
         <div>
           <h2>Welcome to</h2>
@@ -131,27 +95,23 @@
         <div>
           <h4>"Every cup an experience!"</h4>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col mt-4 mb-4 d-flex justify-content-center">
-            <h2>Welcome!</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col mb-5 info">
-            Nestled in the heart of the city, Caffeine Dreams Coffee Shop is a
-            charming oasis for those who cherish the timeless ritual of coffee
-            drinking. From the robust espresso to the velvety latte, each drink
-            is a testament to our passion for coffee excellence. At Caffeine
-            Dreams, we believe in sustainability and community. We're committed
-            to environmentally friendly practices, from using biodegradable
-            packaging to sourcing our ingredients locally. By visiting us,
-            you're not just enjoying a cup of coffee; you're supporting a
-            network of local growers and artisans. "Caffeine Dreams Coffee Shop
-            - Brewing Fantasies, One Cup at a Time." Join us in this delightful
-            journey of flavors, community, and the simple joy of a great cup of
-            coffee.
+
+        <div class="row mt-5">
+          <div class="col mb-2 pe-5 ps-5 info">
+            <p>
+              Nestled in the heart of the city, Caffeine Dreams Coffee Shop is a
+              charming oasis for those who cherish the timeless ritual of coffee
+              drinking. From the robust espresso to the velvety latte, each
+              drink is a testament to our passion for coffee excellence. At
+              Caffeine Dreams, we believe in sustainability and community. We're
+              committed to environmentally friendly practices, from using
+              biodegradable packaging to sourcing our ingredients locally. By
+              visiting us, you're not just enjoying a cup of coffee; you're
+              supporting a network of local growers and artisans. "Caffeine
+              Dreams Coffee Shop - Brewing Fantasies, One Cup at a Time." Join
+              us in this delightful journey of flavors, community, and the
+              simple joy of a great cup of coffee.
+            </p>
           </div>
         </div>
         <div class="row">
@@ -163,6 +123,8 @@
           </div>
         </div>
       </div>
+
+      <div class="container"></div>
     </main>
     <footer>
       <!-- place footer here -->
