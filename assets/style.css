@@ -1,4 +1,13 @@
 /* Common Styles */
+:root {
+  --lightest: #fae9d2;
+  --light: #d8cec1;
+  --midLight: #856b56;
+  --midDark: #724f3c;
+  --dark: #332213;
+  --darkest: #090605;
+}
+
 body .main,
 header {
   opacity: 1;
@@ -11,12 +20,23 @@ header {
 }
 
 h1,
-h2 {
+h2,
+h4,
+h5 {
   font-family: "Playfair Display", serif;
 }
 
 h1 {
   font-size: 4rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
 p {
@@ -26,12 +46,50 @@ p {
 
 /* Homepage Styles */
 
+/* Homepage Styles End */
+
 /* Contact Page Styles */
+.hero {
+  background-image: url(./contactBannerTransparent.png);
+  background-size: cover;
+}
+
+form {
+  background-color: var(--light);
+}
+
+ul {
+  list-style: none;
+}
+
+.newsletterSubmitBtn {
+  background-color: var(--midLight);
+  font-size: 1.2rem;
+}
+
+.socialMediaIcons {
+  font-size: 48px;
+  color: var(--midDark);
+}
+
+form {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  iframe {
+    width: 600px;
+    height: 450px;
+  }
+}
+/* Contact Page Styles End */
 
 /* About Us Styles */
 .staff {
   max-width: 350px;
 }
+/* About Us Styles End */
 
 /* Menu Page Styles */
 span {
@@ -42,6 +100,7 @@ ul li {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
 }
+/* Menu Styles End */
 
 /* Gallery Page Styles */
 .galleryContainer {
@@ -77,8 +136,10 @@ ul li {
     justify-self: center;
   }
 }
+/* Gallery Page Styles End */
 
 /* Events Page Styles */
 .eventPicture {
   max-width: 300px;
 }
+/* Events Page Styles End */
