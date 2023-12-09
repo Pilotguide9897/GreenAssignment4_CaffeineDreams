@@ -1,0 +1,84 @@
+/* Common Styles */
+body .main,
+header {
+  opacity: 1;
+  background-color: rgb(248, 249, 250);
+}
+
+#navbarLarger {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Homepage Styles */
+
+/* Contact Page Styles */
+
+/* About Us Styles */
+.staff {
+  max-width: 350px;
+}
+
+/* Menu Page Styles */
+span {
+  font-weight: bold;
+}
+
+ul li {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Gallery Page Styles */
+.galleryContainer {
+  display: grid;
+}
+@media (max-width: 767px) {
+  .galleryContainer {
+    grid-template-columns: 1fr;
+  }
+  .galleryContainer img {
+    width: 80%;
+    height: auto;
+    justify-self: center;
+  }
+}
+@media (min-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galleryContainer img {
+    width: 80%;
+    max-height: 500px;
+    justify-self: center;
+  }
+}
+@media (min-width: 992px) {
+  .galleryContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .galleryContainer img {
+    width: 80%;
+    max-height: 500px;
+    justify-self: center;
+  }
+}
+
+/* Events Page Styles */
+.eventPicture {
+  max-width: 300px;
+}
