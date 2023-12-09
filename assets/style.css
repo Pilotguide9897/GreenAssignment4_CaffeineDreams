@@ -10,11 +10,28 @@ header {
   font-size: 2rem;
 }
 
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
 /* Homepage Styles */
 
 /* Contact Page Styles */
 
 /* About Us Styles */
+.staff {
+  max-width: 350px;
+}
 
 /* Menu Page Styles */
 span {
@@ -62,17 +79,6 @@ ul li {
 }
 
 /* Events Page Styles */
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 4rem;
-}
-
-p {
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
-}
-
 .eventPicture {
   max-width: 300px;
 }
