@@ -44,23 +44,15 @@ p {
   font-size: 1.5rem;
 }
 
+/* Common Styles End */
+
 /* Homepage Styles */
 .info img {
   max-width: auto;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Merriweather", serif;
-  color: var(--darkest);
-} */
-
 .homepageHero {
-  background-image: url(./cafeBannerTransparent.png);
+  background-image: url(./homepageAssets/cafeBannerTransparent.png);
   background-size: cover;
   height: 1000px;
 }
@@ -73,7 +65,7 @@ h6 {
 
 /* Contact Page Styles */
 .hero {
-  background-image: url(./contactBannerTransparent.png);
+  background-image: url(./contactAssets/contactBannerTransparent.png);
   background-size: cover;
 }
 
@@ -98,6 +90,10 @@ ul {
 form {
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
+}
+
+.closingCoffee {
+  max-width: 500px;
 }
 
 @media (max-width: 1200px) {
